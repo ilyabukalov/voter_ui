@@ -14,7 +14,7 @@ type createPollRequest struct {
 	BaseReq rest.BaseReq `json:"base_req"`
 	Creator string `json:"creator"`
 	Title string `json:"title"`
-	Options string `json:"options"`
+	Options []string `json:"options"`
 	
 }
 
