@@ -38,3 +38,12 @@ type (
 
 	// TODO: Fill out module types
 )
+
+var (
+	NewMsgCreatePoll = types.NewMsgCreatePoll
+)
+
+type (
+	MsgCreatePoll = types.MsgCreatePoll
+)
+		
