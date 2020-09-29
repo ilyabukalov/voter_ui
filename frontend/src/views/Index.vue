@@ -3,7 +3,7 @@
     <app-layout>
       <app-text type="h1">voter</app-text>
       <wallet />
-      <type-list />
+      <poll-form />
     </app-layout>
   </div>
 </template>
