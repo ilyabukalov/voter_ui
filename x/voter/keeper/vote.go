@@ -8,7 +8,7 @@ import (
 
 func (k Keeper) CreateVote(ctx sdk.Context, vote types.Vote) {
 	store := ctx.KVStore(k.storeKey)
-	key := []byte(types.VotePrefix + vote.ID)
+  key := []byte(types.VotePrefix + vote.PollID + "-" + string(vote.Creator))
 	value := k.cdc.MustMarshalBinaryLengthPrefixed(vote)
 	store.Set(key, value)
 }
